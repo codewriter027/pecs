@@ -24,7 +24,7 @@ function generate() {
 
     // Load image
     var img = new Image();
-    img.src = "./assets/LC-image.png";
+    img.src = "https://codewriter027.github.io/pecs/assets/LC-image.png";
     img.onload = function () {
         var canvas = document.createElement("canvas");
         var ctx = canvas.getContext("2d");
@@ -74,9 +74,5 @@ function generate() {
 
 
 function generateLc(){
-    window.location.href = "./lc-generate.html";
-}
-
-function PrintLc(){
-    window.location.href = "./lc-print.html";
+    window.location.href = "https://codewriter027.github.io/pecs/lc-generate.html";
 }
