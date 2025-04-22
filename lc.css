@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "PlusJakartaSans-SemiBold";
+    src: url("./assets/PlusJakartaSans-SemiBold.ttf") format("truetype");
+}
+*{
+    font-family: "PlusJakartaSans-SemiBold", sans-serif;
+}
+
+h1{
+    justify-self: center;
+    font-size: 200%;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin: auto;
+}
+input{
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: black;
+}
+button{
+    grid-column: 1 / -1;
+    height: 50px;
+    width: 31.5%;
+    color: rgb(15, 132, 228);
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(15, 132, 228);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.output{
+    max-width: 100%; /* A4 width */
+    max-height: 297mm; /* A4 height */
+    display: none;
+}
+#print{
+    display: none;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    #output {
+        max-width: 210mm; /* A4 width */
+        max-height: 297mm; /* A4 height */
+        width: auto; /* Ensures proportional scaling */
+        height: auto;
+        display: block;
+        margin: auto;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width:900px){
+    form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    button{
+        width: 97.5%;
+    }
+}
+
+@media screen and (max-width:500px){
+    form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    button{
+        width: 95%;
+    }
+    h1{
+        font-size: 260%;
+    }
+}

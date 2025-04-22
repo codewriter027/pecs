@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaving Certificate - PECS</title>
+    <link rel="stylesheet" href="lc.css">
+    <link rel="icon" type="image/png" href="./assets/pecs-logo.png">
+</head>
+<body>
+    <h1>Leaving Certificate</h1>
+    <form>
+        <input type="text" id="grNum" placeholder="G R. Number">
+        <input type="text" id="issueDate" placeholder="Certificate Issue Date" inputmode="">
+        <input type="text" id="name" placeholder="Student's Full Name">
+        <input type="text" id="father" placeholder="Father's Full Name">
+        <input type="text" id="religion" placeholder="Religion">
+        <input type="text" id="cast" placeholder="Cast">
+        <input type="text" id="birthPlace" placeholder="Place of Birth">
+        <input type="text" id="birthDate" placeholder="Date of Birth">
+        <input type="text" id="birthDateNWord" placeholder="Date of Birth in Words">
+        <input type="text" id="lastSchool" placeholder="Last School Attended">
+        <input type="text" id="admissionDate" placeholder="Date of Admission">
+        <input type="text" id="currentClass" placeholder="Current Class">
+        <input type="text" id="admissionClass" placeholder="Class in Which Admission">
+        <input type="text" id="dues" placeholder="School Dues">
+        <input type="text" id="leavingDate" placeholder="School Leaving Date">
+        <input type="text" id="reason" placeholder="Reason for Leaving">
+        <input type="text" id="progress" placeholder="Progress">
+        <input type="text" id="conduct" placeholder="Conduct">
+        <input type="text" id="remark" placeholder="Remarks">
+        <input type="text" id="note" placeholder="Note (If Any)">
+        <button type="button" onclick="javascript:generate()">Generate Certificate</button>
+    </form>
+    <img class="output" id="output" alt="img">
+    <br>
+    <button type="button" id="print" onclick="window.print()">Print</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
