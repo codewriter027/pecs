@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PlusJakartaSans-SemiBold";
-    src: url("./assets/PlusJakartaSans-SemiBold.ttf") format("truetype");
+    src: url("https://codewriter027.github.io/pecs/assets/PlusJakartaSans-SemiBold.ttf") format("truetype");
 }
 *{
     font-family: "PlusJakartaSans-SemiBold", sans-serif;
