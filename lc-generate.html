@@ -10,27 +10,89 @@
 <body>
     <h1>Leaving Certificate</h1>
     <form>
-        <input type="text" id="grNum" placeholder="G R. Number">
-        <input type="text" id="issueDate" placeholder="Certificate Issue Date" inputmode="">
-        <input type="text" id="name" placeholder="Student's Full Name">
-        <input type="text" id="father" placeholder="Father's Full Name">
-        <input type="text" id="religion" placeholder="Religion">
-        <input type="text" id="cast" placeholder="Cast">
-        <input type="text" id="birthPlace" placeholder="Place of Birth">
-        <input type="text" id="birthDate" placeholder="Date of Birth">
-        <input type="text" id="birthDateNWord" placeholder="Date of Birth in Words">
-        <input type="text" id="lastSchool" placeholder="Last School Attended">
-        <input type="text" id="admissionDate" placeholder="Date of Admission">
-        <input type="text" id="currentClass" placeholder="Current Class">
-        <input type="text" id="admissionClass" placeholder="Class in Which Admission">
-        <input type="text" id="dues" placeholder="School Dues">
-        <input type="text" id="leavingDate" placeholder="School Leaving Date">
-        <input type="text" id="reason" placeholder="Reason for Leaving">
-        <input type="text" id="progress" placeholder="Progress">
-        <input type="text" id="conduct" placeholder="Conduct">
-        <input type="text" id="remark" placeholder="Remarks">
-        <input type="text" id="note" placeholder="Note (If Any)">
+        <div class="inputContainer">
+            <label for="grNum">G R. Number</label>
+            <input type="text" id="grNum" placeholder="G R. Number">
+        </div>
+        <div class="inputContainer">
+            <label for="issueDate">Issue Date</label>
+            <input type="text" id="issueDate" placeholder="Certificate Issue Date">
+        </div>
+        <div class="inputContainer">
+            <label for="name">Student's Name</label>
+            <input type="text" id="name" placeholder="Student's Full Name">
+        </div>
+        <div class="inputContainer">
+            <label for="father">Father Name</label>
+            <input type="text" id="father" placeholder="Father's Full Name">
+        </div>
+        <div class="inputContainer">
+            <label for="religion">Religion</label>
+            <input type="text" id="religion" placeholder="Religion">
+        </div>
+        <div class="inputContainer">
+            <label for="cast">Cast</label>
+            <input type="text" id="cast" placeholder="Cast">
+        </div>
+        <div class="inputContainer">
+            <label for="birthPlace">Place Of Birth</label>
+            <input type="text" id="birthPlace" placeholder="Place of Birth">
+        </div>
+        <div class="inputContainer">
+            <label for="birthDate">Date Of Birth</label>
+            <input type="text" id="birthDate" placeholder="Date of Birth">
+        </div>
+        <div class="inputContainer">
+            <label for="birthDateNWord">Date Of Birth In Words</label>
+            <input type="text" id="birthDateNWord" placeholder="Date of Birth in Words">
+        </div>
+        <div class="inputContainer">
+            <label for="lastSchool">Last School Attended</label>
+            <input type="text" id="lastSchool" placeholder="Last School Attended">
+        </div>
+        <div class="inputContainer">
+            <label for="admissionDate">Date Of Admission</label>
+            <input type="text" id="admissionDate" placeholder="Date of Admission">
+        </div>
+        <div class="inputContainer">
+            <label for="currentClass">Current Class</label>
+            <input type="text" id="currentClass" placeholder="Current Class">
+        </div>
+        <div class="inputContainer">
+            <label for="admissionClass">Class in Which Admission</label>
+            <input type="text" id="admissionClass" placeholder="Class in Which Admission">
+        </div>
+        <div class="inputContainer">
+            <label for="dues">School Dues</label>
+            <input type="text" id="dues" placeholder="School Dues">
+        </div>
+        <div class="inputContainer">
+            <label for="leavingDate">School Leaving Date</label>
+            <input type="text" id="leavingDate" placeholder="School Leaving Date">
+        </div>
+        <div class="inputContainer">
+            <label for="reason">Reason for Leaving</label>
+            <input type="text" id="reason" placeholder="Reason for Leaving">
+        </div>
+        <div class="inputContainer">
+            <label for="progress">Progress</label>
+            <input type="text" id="progress" placeholder="Progress">
+        </div>
+        <div class="inputContainer">
+            <label for="conduct">Conduct</label>
+            <input type="text" id="conduct" placeholder="Conduct">
+        </div>
+        <div class="inputContainer">
+            <label for="remark">Remarks</label>
+            <input type="text" id="remark" placeholder="Remarks">
+        </div>
+        <div class="inputContainer">
+            <label for="note">Optional Note</label>
+            <input type="text" id="note" placeholder="Note (If Any)">
+        </div>
+        
         <button type="button" onclick="javascript:generate()">Generate Certificate</button>
+
     </form>
     <img class="output" id="output" alt="img">
     <br>
