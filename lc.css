@@ -20,6 +20,9 @@ form{
     display:flex;
     flex-direction:column;
 }
+label{
+    margin-left:10px;
+}
 input{
     margin: 10px;
     padding-left: 15px;
